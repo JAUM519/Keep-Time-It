@@ -3,7 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { listenAuthState } from "../services/auth";
 import { RootStackParamList } from "./types";
-import  PhoneSignInScreen  from "../screens/auth/PhoneSignInScreen";
+import  EmailSignInScreen from "../screens/auth/EmailSignInScreen";
 import { AppDrawerNavigator } from "./app/AppDrawerNavigator";
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -26,7 +26,7 @@ export function RootNavigator() {
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         {!signedIn ? (
-          <Stack.Screen name="Auth" component={PhoneSignInScreen} />
+          <Stack.Screen name="Auth" component={EmailSignInScreen as any} />
         ) : (
           <Stack.Screen name="App" component={AppDrawerNavigator} />
         )}
