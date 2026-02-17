@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "Keep Time It",
+    "slug": "keep-time-it",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {},
+    "web": {
+      "bundler": "metro"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "44253244-7849-455c-8da1-eee381e66a77"
+      }
+    }
+  }
+}
